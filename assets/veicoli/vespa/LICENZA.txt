@@ -1,0 +1,11 @@
+Model Information:
+* title:	Worn Out Old School Vespa
+* source:	https://sketchfab.com/3d-models/worn-out-old-school-vespa-358a77040c53419b9bb50c462a160e6f
+* author:	Jakob_Forseth (https://sketchfab.com/Jakob_Forseth)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Worn Out Old School Vespa" (https://sketchfab.com/3d-models/worn-out-old-school-vespa-358a77040c53419b9bb50c462a160e6f) by Jakob_Forseth (https://sketchfab.com/Jakob_Forseth) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

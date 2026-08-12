@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#07080a" />
+
+<title>My Dealer — Porto Nero</title>
+<meta name="description" content="Porto Nero non perdona. Due campagne, una città viva, prezzi che cambiano ogni giorno e una polizia che impara la tua faccia." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="My Dealer — Porto Nero" />
+<meta property="og:description" content="200 €, uno zaino e un numero di telefono. Il resto te lo giochi." />
+<meta property="og:image" content="./assets/landing/apertura.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%230b0d10%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Inter%2Csystem-ui%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22900%22%20text-anchor%3D%22middle%22%20fill%3D%22%2336e0b0%22%3EM%3C%2Ftext%3E%3C%2Fsvg%3E" />
+<link rel="preload" as="image" href="./assets/landing/apertura.jpg" />
+<link rel="stylesheet" href="./landing.css" />
+</head>
+<body>
+<header class="ap" id="ap">
+  <div class="ap-sfondo" aria-hidden="true">
+    <div class="ap-foto"></div>
+    <canvas id="pioggia" class="ap-pioggia"></canvas>
+    <div class="ap-velo"></div>
+    <div class="ap-grana"></div>
+    <div class="ap-scan"></div>
+  </div>
+
+  <nav class="barra">
+    <span class="marchio">MY&nbsp;DEALER</span>
+    <span class="barra-nota">Porto Nero</span>
+    <a class="barra-cta" href="./gioco.html">Gioca ora</a>
+  </nav>
+
+  <div class="ap-corpo" id="ap-corpo">
+    <div class="ap-testo">
+      <h1 class="titolone">
+        <span class="riga"><span>MY</span></span>
+        <span class="riga"><span>DEALER</span></span>
+      </h1>
+
+      <p class="sottotitolo">
+        200 €, uno zaino e il numero di un tizio del Bar Bianco Nero.<br class="solo-largo" />
+        Nessuno ti conosce: fra un mese o sanno il tuo nome, o non lo sa più nessuno.
+      </p>
+      <p class="girevole">
+        Porto Nero è una città che
+        <span class="parole"><span class="rullo" id="parole"
+          ><b>ti guarda</b><b>ti frega</b><b>ti ricorda</b><b>non perdona</b
+        ></span></span>
+      </p>
+
+      <div class="azioni">
+        <a class="btn-grosso" href="./gioco.html">
+          <span>ENTRA A PORTO NERO</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" /></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="nastro" aria-hidden="true">
+    <div class="nastro-piste">
+      <div class="pista">
+        <span>prezzi veri di strada</span><i>◆</i>
+        <span>la polizia impara la tua faccia</span><i>◆</i>
+        <span>i clienti rispondono davvero, non a copione</span><i>◆</i>
+        <span>targhe che finiscono in lista</span><i>◆</i>
+        <span>il mercato cambia ogni giorno</span><i>◆</i>
+        <span>si può provare a vendere a chiunque</span><i>◆</i>
+      </div>
+      <div class="pista">
+        <span>prezzi veri di strada</span><i>◆</i>
+        <span>la polizia impara la tua faccia</span><i>◆</i>
+        <span>i clienti rispondono davvero, non a copione</span><i>◆</i>
+        <span>targhe che finiscono in lista</span><i>◆</i>
+        <span>il mercato cambia ogni giorno</span><i>◆</i>
+        <span>si può provare a vendere a chiunque</span><i>◆</i>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="dentro" id="dentro">
+  <div class="dentro-griglia">
+
+    <div class="dentro-testo">
+      <p class="etichetta">Il gioco</p>
+      <h2 class="titolo2">Due lati<br />della stessa medaglia.</h2>
+      <p class="paragrafo">
+        La stessa città, giocata da chi vende e da chi compra.
+        Di là ci fai i soldi, di qua li spendi tutti.
+      </p>
+
+      <div class="carte">
+        <button class="carta attiva" data-figura="0">
+          <b>Spacciatore</b>
+          <span>Costruisci un giro dal niente. Ogni vendita è una faccia che ti ha visto.</span>
+        </button>
+        <button class="carta" data-figura="1">
+          <b>Cliente</b>
+          <span>Dall'altra parte. Salute, soldi e voglia che sale mentre la giornata scende.</span>
+        </button>
+        <button class="carta" data-figura="2">
+          <b>La città</b>
+          <span>Cinque quartieri, prezzi che cambiano, gente che cammina e ti evita.</span>
+        </button>
+        <button class="carta" data-figura="3">
+          <b>Il telefono</b>
+          <span>Scrivi ai clienti come scriveresti davvero. Rispondono con parole loro: nessuna partita ha le stesse conversazioni.</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="schermo-finto" id="schermo">
+      <div class="schermo-alone" aria-hidden="true"></div>
+      <div class="schermo-cornice">
+        <div class="schermo-barra"><i></i><i></i><i></i><em>porto nero · vivo</em></div>
+        <div class="schermo-vetro">
+          <img src="./assets/landing/scheda-spacciatore.jpg" alt="Il mercato: prezzo di ogni sostanza quartiere per quartiere" class="lastra visibile" />
+          <img src="./assets/landing/scheda-cliente.jpg" alt="Modalità Cliente di notte: salute bassa, craving alto, percezione che si deforma" class="lastra" loading="lazy" />
+          <img src="./assets/landing/scheda-citta.jpg" alt="Porto Nero dall'alto al tramonto" class="lastra" loading="lazy" />
+          <img src="./assets/landing/scheda-telefono.jpg" alt="Il telefono del gioco con una chat in corso" class="lastra" loading="lazy" />
+          <div class="schermo-riflesso"></div>
+        </div>
+      </div>
+      <div class="schermo-base"></div>
+    </div>
+  </div>
+
+  <div class="rullino" id="rullino">
+    <figure><img src="./assets/landing/trattativa.jpg" alt="La trattativa sul prezzo" loading="lazy" /><figcaption>Il prezzo si contratta</figcaption></figure>
+    <figure><img src="./assets/landing/telefono.jpg" alt="Il telefono del gioco con una chat in corso" loading="lazy" /><figcaption>Al cliente si scrive a mano</figcaption></figure>
+    <figure><img src="./assets/landing/auto.jpg" alt="Le auto parcheggiate" loading="lazy" /><figcaption>Mezzi veri, targhe leggibili</figcaption></figure>
+    <figure><img src="./assets/landing/cliente.jpg" alt="La campagna del cliente, di notte" loading="lazy" /><figcaption>L'altra campagna: il cliente</figcaption></figure>
+    <figure><img src="./assets/landing/scooter.jpg" alt="Gli scooter" loading="lazy" /><figcaption>Dal cinquantino al maxiscooter</figcaption></figure>
+    <figure><img src="./assets/landing/storia.jpg" alt="La campagna a capitoli" loading="lazy" /><figcaption>Una campagna a capitoli</figcaption></figure>
+    <figure><img src="./assets/landing/scheda-citta.jpg" alt="Porto Nero dall'alto" loading="lazy" /><figcaption>Cinque quartieri, prezzi diversi</figcaption></figure>
+  </div>
+</section>
+<section class="mezzi" id="mezzi">
+  <div class="mezzi-testa">
+    <p class="etichetta">I mezzi</p>
+    <h2 class="titolo2">Tredici, e si rubano tutti.</h2>
+    <p class="paragrafo">
+      Dal cinquantino scassato al maxiscooter, fino alle quattro ruote. Ognuno con la
+      sua targa leggibile — che è il motivo per cui rubarne uno si paga: dopo un
+      po' quella targa finisce in una lista, e la lista gira per la città al posto tuo.
+    </p>
+  </div>
+
+  <figure class="mezzi-fila">
+    <img src="./assets/landing/mezzi-cinquantini.jpg" alt="Quattro cinquantini allineati in strada" loading="lazy" />
+    <figcaption>I cinquantini — si parte da qui, e si sente</figcaption>
+  </figure>
+  <figure class="mezzi-fila">
+    <img src="./assets/landing/mezzi-scooter.jpg" alt="Quattro scooter di grossa cilindrata allineati in strada" loading="lazy" />
+    <figcaption>Scooter e maxiscooter — quando i soldi cominciano a girare</figcaption>
+  </figure>
+  <figure class="mezzi-fila">
+    <img src="./assets/landing/mezzi-auto.jpg" alt="Quattro automobili allineate in strada" loading="lazy" />
+    <figcaption>Le quattro ruote — più capienti, più visibili</figcaption>
+  </figure>
+</section>
+<section class="chiusura">
+  <div class="chiusura-luce" aria-hidden="true"></div>
+  <div class="chiusura-corpo">
+    <h2 class="titolo3">Porto Nero<br />non ti deve niente.</h2>
+    <p class="paragrafo centro">
+      Ha già i suoi prezzi, i suoi giri e la sua polizia, e andava avanti benissimo anche senza di te.
+      Tu arrivi con 200 € e una faccia che non ha mai visto nessuno.
+      Da lì in avanti non c'è un livello da finire: c'è quanto riesci a durare.
+    </p>
+    <a class="btn-grosso grande" href="./gioco.html">
+      <span>ENTRA A PORTO NERO</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" /></svg>
+    </a>
+    <p class="minuta">
+      Opera di finzione: non contiene procedure, dosi né istruzioni d'uso reali.
+    </p>
+  </div>
+
+  <footer class="pieDiPagina">
+    <p>Gioco ideato dalla <b>BlackSheep Corp AI Stack</b>.</p>
+  </footer>
+</section>
+
+<script src="./landing.js"></script>
+</body>
+</html>

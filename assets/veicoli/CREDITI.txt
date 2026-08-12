@@ -1,0 +1,12 @@
+Veicoli — chi li ha fatti.
+
+Licenza CC-BY 4.0: uso commerciale permesso, l'autore va citato.
+Questi nomi devono comparire nella schermata dei crediti del gioco.
+
+auto             Comrade1280        CC-BY   sketchfab.com/3d-models/generic-passenger-car-pack-20f9af9b8a404d5cb022ac6fe87f21f5
+civili           Comrade1280        CC-BY   sketchfab.com/3d-models/generic-civil-service-vehicles-pack-8ff2a13f30914932a70c7950cfa58465
+vespa-vecchia    Nadia Ribitis      CC-BY   sketchfab.com/3d-models/old-scooter-5e9b5072b2224ba982366490ad5f31d9
+scooter          Liberi Arcano      CC-BY   sketchfab.com/3d-models/3december-2021-day-2-scooter-db9f2f8c6c4f418c9a2ca170ee60a737
+vespa            Jakob_Forseth      CC-BY   sketchfab.com/3d-models/worn-out-old-school-vespa-358a77040c53419b9bb50c462a160e6f
+
+Kenney Car Kit (assets/veicoli/*.glb) — Kenney, CC0, nessun obbligo.

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Old Scooter
+* source:	https://sketchfab.com/3d-models/old-scooter-5e9b5072b2224ba982366490ad5f31d9
+* author:	Nadia Ribitis (https://sketchfab.com/ribitis)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Old Scooter" (https://sketchfab.com/3d-models/old-scooter-5e9b5072b2224ba982366490ad5f31d9) by Nadia Ribitis (https://sketchfab.com/ribitis) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
