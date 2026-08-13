@@ -30,7 +30,11 @@
   <nav class="barra">
     <span class="marchio">MY&nbsp;DEALER</span>
     <span class="barra-nota">Porto Nero</span>
-    <a class="barra-cta" href="./gioco.html">Gioca ora</a>
+    <div class="lingue-barra" role="group" aria-label="Language">
+      <button class="lingua-barra" data-lingua="it" lang="it">IT</button>
+      <button class="lingua-barra" data-lingua="en" lang="en">EN</button>
+    </div>
+    <a class="barra-cta" href="./gioco.html" data-t="Gioca ora">Gioca ora</a>
   </nav>
 
   <div class="ap-corpo" id="ap-corpo">
@@ -41,19 +45,19 @@
       </h1>
 
       <p class="sottotitolo">
-        200 €, uno zaino e il numero di un tizio del Bar Bianco Nero.<br class="solo-largo" />
-        Nessuno ti conosce: fra un mese o sanno il tuo nome, o non lo sa più nessuno.
+        <span data-t="200 €, uno zaino e il numero di un tizio del Bar Bianco Nero.">200 €, uno zaino e il numero di un tizio del Bar Bianco Nero.</span><br class="solo-largo" />
+        <span data-t="Nessuno ti conosce: fra un mese o sanno il tuo nome, o non lo sa più nessuno.">Nessuno ti conosce: fra un mese o sanno il tuo nome, o non lo sa più nessuno.</span>
       </p>
       <p class="girevole">
-        Porto Nero è una città che
+        <span data-t="Porto Nero è una città che">Porto Nero è una città che</span>
         <span class="parole"><span class="rullo" id="parole"
-          ><b>ti guarda</b><b>ti frega</b><b>ti ricorda</b><b>non perdona</b
+          ><b data-t="ti guarda">ti guarda</b><b data-t="ti frega">ti frega</b><b data-t="ti ricorda">ti ricorda</b><b data-t="non perdona">non perdona</b
         ></span></span>
       </p>
 
       <div class="azioni">
         <a class="btn-grosso" href="./gioco.html">
-          <span>ENTRA A PORTO NERO</span>
+          <span data-t="ENTRA A PORTO NERO">ENTRA A PORTO NERO</span>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" /></svg>
         </a>
       </div>
@@ -64,20 +68,20 @@
   <div class="nastro" aria-hidden="true">
     <div class="nastro-piste">
       <div class="pista">
-        <span>prezzi veri di strada</span><i>◆</i>
-        <span>la polizia impara la tua faccia</span><i>◆</i>
-        <span>i clienti rispondono davvero, non a copione</span><i>◆</i>
-        <span>targhe che finiscono in lista</span><i>◆</i>
-        <span>il mercato cambia ogni giorno</span><i>◆</i>
-        <span>si può provare a vendere a chiunque</span><i>◆</i>
+        <span data-t="prezzi veri di strada">prezzi veri di strada</span><i>◆</i>
+        <span data-t="la polizia impara la tua faccia">la polizia impara la tua faccia</span><i>◆</i>
+        <span data-t="i clienti rispondono davvero, non a copione">i clienti rispondono davvero, non a copione</span><i>◆</i>
+        <span data-t="targhe che finiscono in lista">targhe che finiscono in lista</span><i>◆</i>
+        <span data-t="il mercato cambia ogni giorno">il mercato cambia ogni giorno</span><i>◆</i>
+        <span data-t="si può provare a vendere a chiunque">si può provare a vendere a chiunque</span><i>◆</i>
       </div>
       <div class="pista">
-        <span>prezzi veri di strada</span><i>◆</i>
-        <span>la polizia impara la tua faccia</span><i>◆</i>
-        <span>i clienti rispondono davvero, non a copione</span><i>◆</i>
-        <span>targhe che finiscono in lista</span><i>◆</i>
-        <span>il mercato cambia ogni giorno</span><i>◆</i>
-        <span>si può provare a vendere a chiunque</span><i>◆</i>
+        <span data-t="prezzi veri di strada">prezzi veri di strada</span><i>◆</i>
+        <span data-t="la polizia impara la tua faccia">la polizia impara la tua faccia</span><i>◆</i>
+        <span data-t="i clienti rispondono davvero, non a copione">i clienti rispondono davvero, non a copione</span><i>◆</i>
+        <span data-t="targhe che finiscono in lista">targhe che finiscono in lista</span><i>◆</i>
+        <span data-t="il mercato cambia ogni giorno">il mercato cambia ogni giorno</span><i>◆</i>
+        <span data-t="si può provare a vendere a chiunque">si può provare a vendere a chiunque</span><i>◆</i>
       </div>
     </div>
   </div>
@@ -86,29 +90,29 @@
   <div class="dentro-griglia">
 
     <div class="dentro-testo">
-      <p class="etichetta">Il gioco</p>
-      <h2 class="titolo2">Due lati<br />della stessa medaglia.</h2>
-      <p class="paragrafo">
+      <p class="etichetta" data-t="Il gioco">Il gioco</p>
+      <h2 class="titolo2"><span data-t="Due lati">Due lati</span><br /><span data-t="della stessa medaglia.">della stessa medaglia.</span></h2>
+      <p class="paragrafo" data-t="La stessa città, giocata da chi vende e da chi compra. Di là ci fai i soldi, di qua li spendi tutti.">
         La stessa città, giocata da chi vende e da chi compra.
         Di là ci fai i soldi, di qua li spendi tutti.
       </p>
 
       <div class="carte">
         <button class="carta attiva" data-figura="0">
-          <b>Spacciatore</b>
-          <span>Costruisci un giro dal niente. Ogni vendita è una faccia che ti ha visto.</span>
+          <b data-t="Spacciatore">Spacciatore</b>
+          <span data-t="Costruisci un giro dal niente. Ogni vendita è una faccia che ti ha visto.">Costruisci un giro dal niente. Ogni vendita è una faccia che ti ha visto.</span>
         </button>
         <button class="carta" data-figura="1">
-          <b>Cliente</b>
-          <span>Dall'altra parte. Salute, soldi e voglia che sale mentre la giornata scende.</span>
+          <b data-t="Cliente">Cliente</b>
+          <span data-t="Dall'altra parte. Salute, soldi e voglia che sale mentre la giornata scende.">Dall'altra parte. Salute, soldi e voglia che sale mentre la giornata scende.</span>
         </button>
         <button class="carta" data-figura="2">
-          <b>La città</b>
-          <span>Cinque quartieri, prezzi che cambiano, gente che cammina e ti evita.</span>
+          <b data-t="La città">La città</b>
+          <span data-t="Cinque quartieri, prezzi che cambiano, gente che cammina e ti evita.">Cinque quartieri, prezzi che cambiano, gente che cammina e ti evita.</span>
         </button>
         <button class="carta" data-figura="3">
-          <b>Il telefono</b>
-          <span>Scrivi ai clienti come scriveresti davvero. Rispondono con parole loro: nessuna partita ha le stesse conversazioni.</span>
+          <b data-t="Il telefono">Il telefono</b>
+          <span data-t="Scrivi ai clienti come scriveresti davvero. Rispondono con parole loro: nessuna partita ha le stesse conversazioni.">Scrivi ai clienti come scriveresti davvero. Rispondono con parole loro: nessuna partita ha le stesse conversazioni.</span>
         </button>
       </div>
     </div>
@@ -116,7 +120,7 @@
     <div class="schermo-finto" id="schermo">
       <div class="schermo-alone" aria-hidden="true"></div>
       <div class="schermo-cornice">
-        <div class="schermo-barra"><i></i><i></i><i></i><em>porto nero · vivo</em></div>
+        <div class="schermo-barra"><i></i><i></i><i></i><em data-t="porto nero · vivo">porto nero · vivo</em></div>
         <div class="schermo-vetro">
           <img src="./assets/landing/scheda-spacciatore.jpg" alt="Il mercato: prezzo di ogni sostanza quartiere per quartiere" class="lastra visibile" />
           <img src="./assets/landing/scheda-cliente.jpg" alt="Modalità Cliente di notte: salute bassa, craving alto, percezione che si deforma" class="lastra" loading="lazy" />
@@ -130,20 +134,20 @@
   </div>
 
   <div class="rullino" id="rullino">
-    <figure><img src="./assets/landing/trattativa.jpg" alt="La trattativa sul prezzo" loading="lazy" /><figcaption>Il prezzo si contratta</figcaption></figure>
-    <figure><img src="./assets/landing/telefono.jpg" alt="Il telefono del gioco con una chat in corso" loading="lazy" /><figcaption>Al cliente si scrive a mano</figcaption></figure>
-    <figure><img src="./assets/landing/auto.jpg" alt="Le auto parcheggiate" loading="lazy" /><figcaption>Mezzi veri, targhe leggibili</figcaption></figure>
-    <figure><img src="./assets/landing/cliente.jpg" alt="La campagna del cliente, di notte" loading="lazy" /><figcaption>L'altra campagna: il cliente</figcaption></figure>
-    <figure><img src="./assets/landing/scooter.jpg" alt="Gli scooter" loading="lazy" /><figcaption>Dal cinquantino al maxiscooter</figcaption></figure>
-    <figure><img src="./assets/landing/storia.jpg" alt="La campagna a capitoli" loading="lazy" /><figcaption>Una campagna a capitoli</figcaption></figure>
-    <figure><img src="./assets/landing/scheda-citta.jpg" alt="Porto Nero dall'alto" loading="lazy" /><figcaption>Cinque quartieri, prezzi diversi</figcaption></figure>
+    <figure><img src="./assets/landing/trattativa.jpg" alt="La trattativa sul prezzo" loading="lazy" /><figcaption data-t="Il prezzo si contratta">Il prezzo si contratta</figcaption></figure>
+    <figure><img src="./assets/landing/telefono.jpg" alt="Il telefono del gioco con una chat in corso" loading="lazy" /><figcaption data-t="Al cliente si scrive a mano">Al cliente si scrive a mano</figcaption></figure>
+    <figure><img src="./assets/landing/auto.jpg" alt="Le auto parcheggiate" loading="lazy" /><figcaption data-t="Mezzi veri, targhe leggibili">Mezzi veri, targhe leggibili</figcaption></figure>
+    <figure><img src="./assets/landing/cliente.jpg" alt="La campagna del cliente, di notte" loading="lazy" /><figcaption data-t="L'altra campagna: il cliente">L'altra campagna: il cliente</figcaption></figure>
+    <figure><img src="./assets/landing/scooter.jpg" alt="Gli scooter" loading="lazy" /><figcaption data-t="Dal cinquantino al maxiscooter">Dal cinquantino al maxiscooter</figcaption></figure>
+    <figure><img src="./assets/landing/storia.jpg" alt="La campagna a capitoli" loading="lazy" /><figcaption data-t="Una campagna a capitoli">Una campagna a capitoli</figcaption></figure>
+    <figure><img src="./assets/landing/scheda-citta.jpg" alt="Porto Nero dall'alto" loading="lazy" /><figcaption data-t="Cinque quartieri, prezzi diversi">Cinque quartieri, prezzi diversi</figcaption></figure>
   </div>
 </section>
 <section class="mezzi" id="mezzi">
   <div class="mezzi-testa">
-    <p class="etichetta">I mezzi</p>
-    <h2 class="titolo2">Tredici, e si rubano tutti.</h2>
-    <p class="paragrafo">
+    <p class="etichetta" data-t="I mezzi">I mezzi</p>
+    <h2 class="titolo2" data-t="Tredici, e si rubano tutti.">Tredici, e si rubano tutti.</h2>
+    <p class="paragrafo" data-t="Dal cinquantino scassato al maxiscooter, fino alle quattro ruote. Ognuno con la sua targa leggibile — che è il motivo per cui rubarne uno si paga: dopo un po' quella targa finisce in una lista, e la lista gira per la città al posto tuo.">
       Dal cinquantino scassato al maxiscooter, fino alle quattro ruote. Ognuno con la
       sua targa leggibile — che è il motivo per cui rubarne uno si paga: dopo un
       po' quella targa finisce in una lista, e la lista gira per la città al posto tuo.
@@ -152,40 +156,40 @@
 
   <figure class="mezzi-fila">
     <img src="./assets/landing/mezzi-cinquantini.jpg" alt="Quattro cinquantini allineati in strada" loading="lazy" />
-    <figcaption>I cinquantini — si parte da qui, e si sente</figcaption>
+    <figcaption data-t="I cinquantini — si parte da qui, e si sente">I cinquantini — si parte da qui, e si sente</figcaption>
   </figure>
   <figure class="mezzi-fila">
     <img src="./assets/landing/mezzi-scooter.jpg" alt="Quattro scooter di grossa cilindrata allineati in strada" loading="lazy" />
-    <figcaption>Scooter e maxiscooter — quando i soldi cominciano a girare</figcaption>
+    <figcaption data-t="Scooter e maxiscooter — quando i soldi cominciano a girare">Scooter e maxiscooter — quando i soldi cominciano a girare</figcaption>
   </figure>
   <figure class="mezzi-fila">
     <img src="./assets/landing/mezzi-auto.jpg" alt="Quattro automobili allineate in strada" loading="lazy" />
-    <figcaption>Le quattro ruote — più capienti, più visibili</figcaption>
+    <figcaption data-t="Le quattro ruote — più capienti, più visibili">Le quattro ruote — più capienti, più visibili</figcaption>
   </figure>
 </section>
 <section class="chiusura">
   <div class="chiusura-luce" aria-hidden="true"></div>
   <div class="chiusura-corpo">
-    <h2 class="titolo3">Porto Nero<br />non ti deve niente.</h2>
-    <p class="paragrafo centro">
+    <h2 class="titolo3"><span data-t="Porto Nero">Porto Nero</span><br /><span data-t="non ti deve niente.">non ti deve niente.</span></h2>
+    <p class="paragrafo centro" data-t="Ha già i suoi prezzi, i suoi giri e la sua polizia, e andava avanti benissimo anche senza di te. Tu arrivi con 200 € e una faccia che non ha mai visto nessuno. Da lì in avanti non c'è un livello da finire: c'è quanto riesci a durare.">
       Ha già i suoi prezzi, i suoi giri e la sua polizia, e andava avanti benissimo anche senza di te.
       Tu arrivi con 200 € e una faccia che non ha mai visto nessuno.
       Da lì in avanti non c'è un livello da finire: c'è quanto riesci a durare.
     </p>
     <a class="btn-grosso grande" href="./gioco.html">
-      <span>ENTRA A PORTO NERO</span>
+      <span data-t="ENTRA A PORTO NERO">ENTRA A PORTO NERO</span>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" /></svg>
     </a>
-    <p class="minuta">
+    <p class="minuta" data-t="Opera di finzione: non contiene procedure, dosi né istruzioni d'uso reali.">
       Opera di finzione: non contiene procedure, dosi né istruzioni d'uso reali.
     </p>
   </div>
 
   <footer class="pieDiPagina">
-    <p>Gioco ideato dalla <b>BlackSheep Corp AI Stack</b>.</p>
+    <p><span data-t="Gioco ideato dalla">Gioco ideato dalla</span> <b>BlackSheep Corp AI Stack</b>.</p>
   </footer>
 </section>
 
-<script src="./landing.js"></script>
+<script type="module" src="./landing.js"></script>
 </body>
 </html>

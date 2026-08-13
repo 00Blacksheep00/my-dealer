@@ -16,29 +16,33 @@
 <canvas id="scena"></canvas>
 <div id="menu" class="schermo">
   <div class="menu-box">
+    <div class="lingue" role="group" aria-label="Language">
+      <button class="lingua" data-lingua="it" lang="it">Italiano</button>
+      <button class="lingua" data-lingua="en" lang="en">English</button>
+    </div>
     <h1 class="titolo">MY <span>DEALER</span></h1>
-    <p class="sottotitolo">Porto Nero — una città, due modi di finirci dentro</p>
+    <p class="sottotitolo" data-t="Porto Nero — una città, due modi di finirci dentro">Porto Nero — una città, due modi di finirci dentro</p>
 
     <div class="ruoli">
       <button class="ruolo" data-ruolo="dealer">
         <span class="ruolo-icona">▲</span>
-        <strong>Spacciatore</strong>
-        <em>Comprare basso, vendere alto, non farsi prendere. Sali di livello e sblocchi merce che scotta.</em>
+        <strong data-t="Spacciatore">Spacciatore</strong>
+        <em data-t="Comprare basso, vendere alto, non farsi prendere. Sali di livello e sblocchi merce che scotta.">Comprare basso, vendere alto, non farsi prendere. Sali di livello e sblocchi merce che scotta.</em>
       </button>
       <button class="ruolo" data-ruolo="cliente">
         <span class="ruolo-icona">▼</span>
-        <strong>Cliente</strong>
-        <em>La stessa città dall'altra parte dello scambio. Tenere il lavoro, la salute e il conto in banca.</em>
+        <strong data-t="Cliente">Cliente</strong>
+        <em data-t="La stessa città dall'altra parte dello scambio. Tenere il lavoro, la salute e il conto in banca.">La stessa città dall'altra parte dello scambio. Tenere il lavoro, la salute e il conto in banca.</em>
       </button>
     </div>
 
     <div class="menu-azioni">
-      <button id="btn-continua" class="btn-grande" hidden>Continua la partita</button>
-      <button id="btn-caselle" class="btn-piano">Partite salvate</button>
-      <button id="btn-impostazioni" class="btn-piano">Impostazioni e comandi</button>
-      <button id="btn-info" class="btn-piano">Crediti</button>
+      <button id="btn-continua" class="btn-grande" data-t="Continua la partita" hidden>Continua la partita</button>
+      <button id="btn-caselle" class="btn-piano" data-t="Partite salvate">Partite salvate</button>
+      <button id="btn-impostazioni" class="btn-piano" data-t="Impostazioni e comandi">Impostazioni e comandi</button>
+      <button id="btn-info" class="btn-piano" data-t="Crediti">Crediti</button>
     </div>
-    <p class="disclaimer">
+    <p class="disclaimer" data-t="Opera di finzione. Nessuna informazione qui dentro è utilizzabile nella realtà: le sostanze hanno statistiche di gioco, non ricette. L'enciclopedia interna riporta i rischi reali perché fanno parte di ciò che il gioco racconta.">
       Opera di finzione. Nessuna informazione qui dentro è utilizzabile nella realtà: le sostanze
       hanno statistiche di gioco, non ricette. L'enciclopedia interna riporta i rischi reali perché
       fanno parte di ciò che il gioco racconta.
@@ -50,12 +54,12 @@
   <div class="hud-alto">
     <div class="riquadro soldi">
       <div class="valore" id="hud-contanti">€ 0</div>
-      <div class="etichetta">contanti</div>
+      <div class="etichetta" data-t="contanti">contanti</div>
     </div>
 
     <div class="riquadro tempo">
       <div class="valore" id="hud-ora">08:00</div>
-      <div class="etichetta"><span id="hud-giorno">Giorno 1</span> · <span id="hud-quartiere">—</span></div>
+      <div class="etichetta"><span id="hud-giorno" data-t="Giorno 1">Giorno 1</span> · <span id="hud-quartiere">—</span></div>
     </div>
 
     <div class="riquadro livello">
@@ -69,15 +73,15 @@
     </div>
   </div>
   <div class="hud-vitali" id="hud-vitali" hidden>
-    <div class="vitale"><label>Salute</label><div class="barra"><i id="v-salute"></i></div></div>
-    <div class="vitale"><label>Craving</label><div class="barra"><i id="v-craving"></i></div></div>
-    <div class="vitale"><label>Stamina</label><div class="barra"><i id="v-stamina"></i></div></div>
+    <div class="vitale"><label data-t="Salute">Salute</label><div class="barra"><i id="v-salute"></i></div></div>
+    <div class="vitale"><label data-t="Craving">Craving</label><div class="barra"><i id="v-craving"></i></div></div>
+    <div class="vitale"><label data-t="Stamina">Stamina</label><div class="barra"><i id="v-stamina"></i></div></div>
   </div>
 
   <div class="hud-basso-sx">
     <div class="zaino">
       <div class="zaino-testa">
-        <span>Zaino</span>
+        <span data-t="Zaino">Zaino</span>
         <span id="hud-capienza">0 / 60</span>
       </div>
       <div class="barra"><i id="hud-carico"></i></div>
@@ -88,9 +92,9 @@
   <div class="hud-basso-dx">
     <canvas id="radar" width="200" height="200"></canvas>
     <div class="radar-legenda">
-      <span class="pt verde"></span>cliente
-      <span class="pt blu"></span>polizia
-      <span class="pt giallo"></span>luogo
+      <span class="pt verde"></span><span data-t="cliente">cliente</span>
+      <span class="pt blu"></span><span data-t="polizia">polizia</span>
+      <span class="pt giallo"></span><span data-t="luogo">luogo</span>
     </div>
   </div>
 
@@ -103,7 +107,7 @@
   <div class="pannello-box">
     <div class="pannello-testa">
       <h2 id="pannello-titolo">—</h2>
-      <button id="pannello-chiudi" aria-label="Chiudi">✕</button>
+      <button id="pannello-chiudi" data-t-aria="Chiudi" aria-label="Chiudi">✕</button>
     </div>
     <div id="pannello-corpo"></div>
   </div>
@@ -115,7 +119,7 @@
         <h3 id="dialogo-nome">—</h3>
         <span id="dialogo-ruolo" class="tag">—</span>
       </div>
-      <button id="dialogo-chiudi" aria-label="Chiudi">✕</button>
+      <button id="dialogo-chiudi" data-t-aria="Chiudi" aria-label="Chiudi">✕</button>
     </div>
     <p id="dialogo-battuta" class="battuta">—</p>
     <div id="dialogo-corpo"></div>
@@ -127,12 +131,12 @@
   <div class="fine-box">
     <h2 id="fine-titolo">—</h2>
     <p id="fine-testo">—</p>
-    <button id="fine-ok" class="btn-grande">Continua</button>
+    <button id="fine-ok" class="btn-grande" data-t="Continua">Continua</button>
   </div>
 </div>
 
 <div id="effetto-sballo"></div>
-<div id="caricamento" class="schermo" hidden><div class="spinner"></div><p>Costruisco Porto Nero…</p></div>
+<div id="caricamento" class="schermo" hidden><div class="spinner"></div><p data-t="Costruisco Porto Nero…">Costruisco Porto Nero…</p></div>
 
 <script type="module" src="./gioco.js"></script>
 </body>

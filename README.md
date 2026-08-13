@@ -18,6 +18,8 @@ Due campagne separate, e la seconda è quella che non ti aspetti.
 E una cosa che negli altri simulatori non c'è: **ai clienti si scrive davvero**, e
 loro rispondono con parole loro. Nessuna partita ha le stesse conversazioni.
 
+Si gioca **in italiano o in inglese**, e si sceglie dal menu: cambia tutto, comprese le risposte dei clienti — a un inglese scrivono in inglese.
+
 **Spacciatore.** Costruisci un giro partendo da niente. Ogni vendita è una
 trattativa con una persona vera: ha un budget, una soglia oltre la quale ti manda a
 quel paese, e una pazienza che si consuma a ogni controproposta. Ogni faccia che ti
