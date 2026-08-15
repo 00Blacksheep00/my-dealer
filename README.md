@@ -2,8 +2,8 @@
 
 **▶ Gioca: https://00blacksheep00.github.io/my-dealer/**
 
-200 €, uno zaino e il numero di un tizio del Bar Bianco Nero. Nessuno ti conosce:
-fra un mese o sanno il tuo nome, o non lo sa più nessuno.
+200 €, uno zaino e il numero di un tizio del bar Dolce & Salato. Qui ogni favore
+ha un prezzo. Il conto, prima o poi, arriva sempre.
 
 ---
 

@@ -50,8 +50,9 @@
   </div>
 </div>
 <div id="hud" hidden>
-
   <div class="hud-alto">
+    <div id="obiettivo-corrente" class="riquadro obiettivo"></div>
+
     <div class="riquadro soldi">
       <div class="valore" id="hud-contanti">€ 0</div>
       <div class="etichetta" data-t="contanti">contanti</div>
@@ -72,13 +73,13 @@
       <div class="barra heat-barra"><i id="hud-heat"></i></div>
     </div>
   </div>
-  <div class="hud-vitali" id="hud-vitali" hidden>
-    <div class="vitale"><label data-t="Salute">Salute</label><div class="barra"><i id="v-salute"></i></div></div>
-    <div class="vitale"><label data-t="Craving">Craving</label><div class="barra"><i id="v-craving"></i></div></div>
-    <div class="vitale"><label data-t="Stamina">Stamina</label><div class="barra"><i id="v-stamina"></i></div></div>
-  </div>
+  <div class="hud-colonna-sx">
+    <div class="hud-vitali" id="hud-vitali" hidden>
+      <div class="vitale"><label data-t="Salute">Salute</label><div class="barra"><i id="v-salute"></i></div></div>
+      <div class="vitale"><label data-t="Craving">Craving</label><div class="barra"><i id="v-craving"></i></div></div>
+      <div class="vitale"><label data-t="Stamina">Stamina</label><div class="barra"><i id="v-stamina"></i></div></div>
+    </div>
 
-  <div class="hud-basso-sx">
     <div class="zaino">
       <div class="zaino-testa">
         <span data-t="Zaino">Zaino</span>
@@ -89,7 +90,7 @@
     </div>
   </div>
 
-  <div class="hud-basso-dx">
+  <div class="hud-radar">
     <canvas id="radar" width="200" height="200"></canvas>
     <div class="radar-legenda">
       <span class="pt verde"></span><span data-t="cliente">cliente</span>
@@ -97,9 +98,15 @@
       <span class="pt giallo"></span><span data-t="luogo">luogo</span>
     </div>
   </div>
+  <div class="hud-scorciatoie" id="hud-scorciatoie">
+    <button class="hud-mini storia" data-pannello="missioni" data-t-aria="Storia" data-t-titolo="Storia" aria-label="Storia" title="Storia">📖</button>
+    <button class="hud-mini" data-pannello="telefono" data-t-aria="Cellulare" data-t-titolo="Cellulare" aria-label="Cellulare" title="Cellulare">📱</button>
+    <button class="hud-mini" data-pannello="zaino" data-t-aria="Zaino" data-t-titolo="Zaino" aria-label="Zaino" title="Zaino">🎒</button>
+    <button class="hud-mini" data-pannello="mercato" data-t-aria="Mercato" data-t-titolo="Mercato" aria-label="Mercato" title="Mercato">€</button>
+    <button class="hud-mini" data-pannello="menu" data-t-aria="Menu" data-t-titolo="Menu" aria-label="Menu" title="Menu">☰</button>
+  </div>
 
   <div id="prompt-interazione" class="prompt" hidden></div>
-  <div id="obiettivo-corrente" class="obiettivo-hud"></div>
   <div id="tostini"></div>
   <div class="hud-tasti" id="hud-tasti"></div>
 </div>
