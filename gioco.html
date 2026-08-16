@@ -35,6 +35,17 @@
         <em data-t="La stessa città dall'altra parte dello scambio. Tenere il lavoro, la salute e il conto in banca.">La stessa città dall'altra parte dello scambio. Tenere il lavoro, la salute e il conto in banca.</em>
       </button>
     </div>
+    <section id="scelta-personaggio" class="scelta-personaggio" hidden aria-labelledby="scelta-personaggio-titolo">
+      <button id="btn-indietro-ruolo" class="indietro" data-t="← Cambia ruolo">← Cambia ruolo</button>
+      <p id="scelta-ruolo" class="scelta-ruolo"></p>
+      <h2 id="scelta-personaggio-titolo" data-t="Scegli il tuo personaggio">Scegli il tuo personaggio</h2>
+      <p class="scelta-aiuto" data-t="Solo aspetto: la storia e le statistiche restano uguali.">Solo aspetto: la storia e le statistiche restano uguali.</p>
+      <div id="griglia-personaggi" class="griglia-personaggi" role="radiogroup" data-t-aria="Personaggi disponibili" aria-label="Personaggi disponibili"></div>
+      <div class="scelta-conferma">
+        <div id="personaggio-selezionato" class="personaggio-selezionato" aria-live="polite"></div>
+        <button id="btn-inizia-personaggio" class="btn-grande" data-t="Inizia la partita">Inizia la partita</button>
+      </div>
+    </section>
 
     <div class="menu-azioni">
       <button id="btn-continua" class="btn-grande" data-t="Continua la partita" hidden>Continua la partita</button>
