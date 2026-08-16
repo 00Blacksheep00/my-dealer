@@ -1,0 +1,10 @@
+Custom Harley Davidson FLH 1972 — modello low-poly PBR
+
+Autore: Esteban Lopez (elopez7)
+Fonte: https://opengameart.org/content/custom-harley-davidson-flh-1972
+Licenza: CC0 1.0 Universal (Public Domain)
+
+Il modello originale FBX e le sue texture sono stati convertiti in scene.glb
+per My Dealer tramite tools/converti-moto-cc0.py. Il file sorgente non e'
+incluso nel repository: il GLB di gioco contiene soltanto il modello low-poly
+e le mappe PBR necessarie al browser.

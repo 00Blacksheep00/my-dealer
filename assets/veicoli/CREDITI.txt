@@ -8,5 +8,6 @@ civili           Comrade1280        CC-BY   sketchfab.com/3d-models/generic-civi
 vespa-vecchia    Nadia Ribitis      CC-BY   sketchfab.com/3d-models/old-scooter-5e9b5072b2224ba982366490ad5f31d9
 scooter          Liberi Arcano      CC-BY   sketchfab.com/3d-models/3december-2021-day-2-scooter-db9f2f8c6c4f418c9a2ca170ee60a737
 vespa            Jakob_Forseth      CC-BY   sketchfab.com/3d-models/worn-out-old-school-vespa-358a77040c53419b9bb50c462a160e6f
+harley           Esteban Lopez      CC0     opengameart.org/content/custom-harley-davidson-flh-1972
 
 Kenney Car Kit (assets/veicoli/*.glb) — Kenney, CC0, nessun obbligo.
