@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0b0d10" />
 <title>My Dealer — Porto Nero</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%230b0d10%22%2F%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Inter%2Csystem-ui%2Csans-serif%22%20font-size%3D%2238%22%20font-weight%3D%22900%22%20text-anchor%3D%22middle%22%20fill%3D%22%2336e0b0%22%3EM%3C%2Ftext%3E%3C%2Fsvg%3E" />
-<link rel="stylesheet" href="./style.css?v=8f4f2957cccd" />
+<link rel="stylesheet" href="./style.css?v=43c60022b003" />
 <script>window.MYDEALER_IA_ENDPOINT="https://mura-m2.tail6d416d.ts.net:10000/mydealer-ia";</script>
 </head>
 <body>
@@ -46,7 +46,12 @@
         <div id="griglia-personaggi" class="griglia-personaggi" role="radiogroup" data-t-aria="Personaggi disponibili" aria-label="Personaggi disponibili"></div>
       </div>
       <div class="scelta-conferma">
-        <button id="btn-inizia-personaggio" class="btn-grande" data-t="Inizia la partita">Inizia la partita</button>
+        <label class="nome-giocatore" for="nome-giocatore">
+          <span data-t="Come ti chiami?">Come ti chiami?</span>
+          <input id="nome-giocatore" type="text" maxlength="24" autocomplete="nickname" data-t-ph="Inserisci il tuo nome" placeholder="Inserisci il tuo nome" />
+          <small data-t="Questo sarà il tuo nome a Porto Nero.">Questo sarà il tuo nome a Porto Nero.</small>
+        </label>
+        <button id="btn-inizia-personaggio" class="btn-grande" data-t="Inizia la partita" disabled>Inizia la partita</button>
       </div>
     </section>
 
@@ -78,6 +83,7 @@
     </div>
 
     <div class="riquadro livello">
+      <div class="etichetta nome-hud" id="hud-nome">—</div>
       <div class="valore" id="hud-livello">Lv 1</div>
       <div class="barra"><i id="hud-xp"></i></div>
     </div>
@@ -160,6 +166,6 @@
 <div id="effetto-sballo"></div>
 <div id="caricamento" class="schermo" hidden><div class="spinner"></div><p data-t="Costruisco Porto Nero…">Costruisco Porto Nero…</p></div>
 
-<script type="module" src="./gioco.js?v=47172e6b89fa"></script>
+<script type="module" src="./gioco.js?v=c7bf1e745b64"></script>
 </body>
 </html>
