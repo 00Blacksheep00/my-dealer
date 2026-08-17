@@ -3933,11 +3933,13 @@ Reply as ${t.nome}.`:`You have just met ${this.g.stato.nome}. Open the exchange 
         <div class="tel-barra">
           <span id="tel-ora">08:00</span>
           <span id="tel-titolo">My Dealer</span>
-          <span id="tel-batteria">\u25AE\u25AE\u25AE</span>
+          <span class="tel-azioni-barra"><span id="tel-batteria">\u25AE\u25AE\u25AE</span>
+            <button id="tel-chiudi" class="tel-chiudi" aria-label="${x("Chiudi")}" title="${x("Chiudi")}">\xD7</button>
+          </span>
         </div>
         <div class="tel-schermo" id="tel-schermo"></div>
         <button class="tel-home" id="tel-home" title="Home"></button>
-      </div>`,document.body.appendChild(t),this.el=t,this.schermo=t.querySelector("#tel-schermo"),t.querySelector("#tel-home").onclick=()=>this.vai("home"),t.addEventListener("keydown",e=>e.stopPropagation()),t.addEventListener("keyup",e=>e.stopPropagation())}apri(){this.aperto=!0,this.el.hidden=!1,document.exitPointerLock?.(),this.vai(this.schermata==="chat"?"messaggi":this.schermata)}chiudi(){this.aperto=!1,this.el.hidden=!0,this.chatAperta=null}toggle(){this.aperto?this.chiudi():this.apri()}vai(t,e=null){this.schermata=t,t==="chat"&&(this.chatAperta=e),this.disegna()}aggiornaBarra(){this.aperto&&(this.el.querySelector("#tel-ora").textContent=Bn(this.g.stato.minuti))}disegna(){let t=this.g.stato,e=this.g.telefono;if(this.schermo.classList.toggle("tel-chat-attiva",this.schermata==="chat"),this.el.querySelector("#tel-ora").textContent=Bn(t.minuti),this.schermata==="home"){this.el.querySelector("#tel-titolo").textContent="Home";let i=(n,o,s,r)=>`
+      </div>`,document.body.appendChild(t),this.el=t,this.schermo=t.querySelector("#tel-schermo"),t.querySelector("#tel-home").onclick=()=>this.vai("home"),t.querySelector("#tel-chiudi").onclick=()=>this.chiudi(),t.addEventListener("keydown",e=>e.stopPropagation()),t.addEventListener("keyup",e=>e.stopPropagation())}apri(){this.aperto=!0,this.el.hidden=!1,document.exitPointerLock?.(),this.vai(this.schermata==="chat"?"messaggi":this.schermata)}chiudi(){this.aperto=!1,this.el.hidden=!0,this.chatAperta=null}toggle(){this.aperto?this.chiudi():this.apri()}vai(t,e=null){this.schermata=t,t==="chat"&&(this.chatAperta=e),this.disegna()}aggiornaBarra(){this.aperto&&(this.el.querySelector("#tel-ora").textContent=Bn(this.g.stato.minuti))}disegna(){let t=this.g.stato,e=this.g.telefono;if(this.schermo.classList.toggle("tel-chat-attiva",this.schermata==="chat"),this.el.querySelector("#tel-ora").textContent=Bn(t.minuti),this.schermata==="home"){this.el.querySelector("#tel-titolo").textContent="Home";let i=(n,o,s,r)=>`
         <button class="tel-app" data-vai="${n}">
           <span class="tel-icona">${s}</span>
           <span>${o}</span>
