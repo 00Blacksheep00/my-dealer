@@ -82,7 +82,7 @@ starci dentro.
 
 ---
 
-Gioco ideato dalla **BlackSheep Corp AI Stack**.
+Gioco ideato dalla **BlackSheep Corp**.
 Tutti i diritti riservati. Alcuni modelli e suoni provengono da autori terzi con
 licenza che ne consente l'uso commerciale; i crediti completi sono nella schermata
 **Info** del gioco.
